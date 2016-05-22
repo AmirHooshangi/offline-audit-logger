@@ -1,11 +1,13 @@
-package com.zoha.batch;
+package com.zoha.batch.entity.pstn;
+
+import com.zoha.batch.entity.standard.StandardBaseLogEntity;
 
 import java.io.Serializable;
 
 /**
  * Created by velorin on 5/13/16.
  */
-public class PSTNModel implements Serializable {
+public class StandarLogPstnEntity extends StandardBaseLogEntity implements Serializable {
 
     String name;
     String age;
@@ -33,5 +35,14 @@ public class PSTNModel implements Serializable {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "StandarLogPstnEntity{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                ", location='" + location + '\'' +
+                '}';
     }
 }

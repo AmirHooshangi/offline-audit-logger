@@ -1,11 +1,11 @@
-package com.zoha.batch;
+package com.zoha.batch.entity.pstn;
 
 import java.io.Serializable;
 
 /**
  * Created by velorin on 5/13/16.
  */
-public class ZohaModel implements Serializable {
+public class DevicePstnEntity implements Serializable {
 
     String name;
     String age;
@@ -33,14 +33,5 @@ public class ZohaModel implements Serializable {
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    @Override
-    public String toString() {
-        return "ZohaModel{" +
-                "name='" + name + '\'' +
-                ", age='" + age + '\'' +
-                ", location='" + location + '\'' +
-                '}';
     }
 }
